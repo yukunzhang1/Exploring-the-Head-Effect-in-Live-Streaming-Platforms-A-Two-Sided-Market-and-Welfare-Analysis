@@ -1,39 +1,4 @@
-# Exploring-the-Head-Effect-in-Live-Streaming-Platforms-A-Two-Sided-Market-and-Welfare-Analysis
-Exploring the Head Effect in Live Streaming Platforms: A Two-Sided Market and Welfare Analysis
-
-
-```TEXT
-live-stream-sim/
-├── agents/
-│   ├── broadcaster.py    # 主播模型
-│   └── viewer.py         # 观众模型
-├── platform/
-│   ├── policy_engine.py  # 政策干预模块
-│   └── recommendation.py # 推荐算法
-├── simulation/
-│   ├── core.py           # 核心模拟引擎
-│   ├── metrics.py        # 指标计算
-│   └── config_loader.py  # 配置加载
-├── analysis/
-│   ├── visualize.py      # 可视化模块
-│   └── reporter.py       # 报告生成
-├── experiments/
-│   ├── comparative.py    # 对比实验
-│   └── sensitivity.py    # 敏感性分析
-├── configs/
-│   └── base.yaml         # 基础配置
-└── utils/
-    └── economics.py      # 经济指标工具
-```
-
-```bash
-pip install -r requirements.txt
-python experiments/comparative.py
-python experiments/sensitivity.py --param network_effect_beta --range 0.1 0.2 --steps 5
-python analysis/reporter.py --input results/exp1/ --output report/
-```
-
-# Exploring the Head Effect in Live Streaming Platforms: A Two-Sided Market and Welfare Analysis [Open View Link](https://openreview.net/forum?id=0YVYjiKbVt&filter=excludedInvitations%3AKDD.org%2F2025%2FADS_Track_February%2FSubmission58%2F-%2FChat&nesting=3&sort=date-desc)
+# Exploring the Head Effect in Live Streaming Platforms: A Two-Sided Market and Welfare Analysis [Openreview Link](https://openreview.net/forum?id=0YVYjiKbVt&filter=excludedInvitations%3AKDD.org%2F2025%2FADS_Track_February%2FSubmission58%2F-%2FChat&nesting=3&sort=date-desc)
 
 ## 1. Project Overview
 This project is dedicated to the research on the head effect in live - streaming platforms. By constructing a simulation model, it delves into network effects, viewer selection mechanisms, and the impacts of platform policy interventions.
@@ -124,5 +89,5 @@ We welcome community members to contribute to the improvement and expansion of t
 
 ## 8. Contact Information
 If you encounter any problems or have any questions during use, please contact us:
-- **Email**: [your_email@example.com](mailto:your_email@example.com)
-- **GitHub Discussion Area**: [Link to the project's discussion area](https://github.com/yourusername/yourproject/discussions)
+- **Email**: [YUKUN ZHANG](215010026@link.cuhk.edu.cn) [QI DONG](19210980065@fudan.edu.cn)
+- **OpenReview Link**: [Link to the paper](https://openreview.net/forum?id=0YVYjiKbVt&filter=excludedInvitations%3AKDD.org%2F2025%2FADS_Track_February%2FSubmission58%2F-%2FChat&nesting=3&sort=date-desc)
