@@ -1,6 +1,6 @@
 import numpy as np
 from matplotlib import pyplot as plt
-import seaborn as sn
+import seaborn as sns
 
 
 def plot_results(viewer_distribution, platform_revenue, streamer_revenues, quality_history, viewer_satisfaction):
