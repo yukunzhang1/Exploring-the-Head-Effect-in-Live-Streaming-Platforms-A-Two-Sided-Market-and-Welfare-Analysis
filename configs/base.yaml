@@ -1,0 +1,11 @@
+# 基础实验配置
+simulation:
+  n_streamers: 15
+  n_viewers: 1000
+  n_rounds: 50
+  intervention_start: 25
+
+economics:
+  base_revenue_share: 0.2
+  network_effect_beta: 0.15
+  quality_decay_rate: 0.01
