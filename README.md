@@ -1,4 +1,4 @@
-# Exploring the Head Effect in Live Streaming Platforms: A Two-Sided Market and Welfare Analysis [Openreview Link](https://openreview.net/forum?id=0YVYjiKbVt&filter=excludedInvitations%3AKDD.org%2F2025%2FADS_Track_February%2FSubmission58%2F-%2FChat&nesting=3&sort=date-desc)
+# Exploring the Head Effect in Live Streaming Platforms: A Two-Sided Market and Welfare Analysis [Paper Link](https://openreview.net/forum?id=0YVYjiKbVt&filter=excludedInvitations%3AKDD.org%2F2025%2FADS_Track_February%2FSubmission58%2F-%2FChat&nesting=3&sort=date-desc)
 
 ## 1. Project Overview
 This project is dedicated to the research on the head effect in live - streaming platforms. By constructing a simulation model, it delves into network effects, viewer selection mechanisms, and the impacts of platform policy interventions.
