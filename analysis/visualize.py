@@ -1,23 +1,37 @@
 import numpy as np
 from matplotlib import pyplot as plt
-import seaborn as sns
+import seaborn as sn
 
-def plot_heatmap(matrix: np.ndarray, title: str):
-    """观众分布热力图"""
-    plt.figure(figsize=(10, 6))
-    sns.heatmap(matrix.T, cmap="YlGnBu")
-    plt.title(title)
-    plt.xlabel("Round")
-    plt.ylabel("Streamer ID")
+
+def plot_results(viewer_distribution, platform_revenue, streamer_revenues, quality_history, viewer_satisfaction):
+    """绘制结果图表"""
+    fig, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2, figsize=(15, 10))
+
+    # 观众分布热力图
+    sns.heatmap(viewer_distribution.T, ax=ax1)
+    ax1.set_title('Viewer Distribution Over Time')
+    ax1.set_xlabel('Round')
+    ax1.set_ylabel('Streamer ID')
+
+    # 收益曲线
+    ax2.plot(platform_revenue, label='Platform Revenue')
+    ax2.plot(streamer_revenues.sum(axis=1), label='Total Streamer Revenue')
+    ax2.set_title('Revenue Over Time')
+    ax2.set_xlabel('Round')
+    ax2.set_ylabel('Revenue')
+    ax2.legend()
+
+    # 质量变化
+    ax3.plot(quality_history)
+    ax3.set_title('Streamer Quality Over Time')
+    ax3.set_xlabel('Round')
+    ax3.set_ylabel('Quality')
+
+    # 观众满意度
+    ax4.plot(np.mean(viewer_satisfaction, axis=1))
+    ax4.set_title('Average Viewer Satisfaction')
+    ax4.set_xlabel('Round')
+    ax4.set_ylabel('Satisfaction')
+
     plt.tight_layout()
-    plt.savefig(f"results/{title.replace(' ', '_')}.png")
-    plt.close()
-
-
-def plot_revenue_trends(platform_rev: list, streamer_rev: list):
-    """收益趋势对比图"""
-    plt.plot(platform_rev, label='Platform Revenue')
-    plt.plot(streamer_rev, label='Total Streamer Revenue')
-    plt.legend()
-    plt.savefig("results/revenue_trends.png")
-    plt.close()
+    plt.show()
