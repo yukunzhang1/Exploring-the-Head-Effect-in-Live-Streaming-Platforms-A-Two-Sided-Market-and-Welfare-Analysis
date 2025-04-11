@@ -25,3 +25,10 @@ live-stream-sim/
 └── utils/
     └── economics.py      # 经济指标工具
 ```
+
+```bash
+pip install -r requirements.txt
+python experiments/comparative.py
+python experiments/sensitivity.py --param network_effect_beta --range 0.1 0.2 --steps 5
+python analysis/reporter.py --input results/exp1/ --output report/
+```
