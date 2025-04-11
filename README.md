@@ -64,10 +64,10 @@ From the table, we can observe that different scenarios lead to varying results.
 
 In addition to the table, the following pictures further illustrate the experimental results:
 <div style="display: flex; justify-content: center;">
-    <img src="result/baseline.png" alt="Image 1" style="width: 20%; margin: 0 10px;">
-    <img src="result/boost_small.png" alt="Image 2" style="width: 20%; margin: 0 10px;">
-    <img src="result/high_tax.png" alt="Image 3" style="width: 20%; margin: 0 10px;">
-    <img src="result/combined.png" alt="Image 4" style="width: 20%; margin: 0 10px;">
+    <img src="result/baseline.png" alt="Image 1" style="width: 25%; margin: 0 10px;">
+    <img src="result/boost_small.png" alt="Image 2" style="width: 25%; margin: 0 10px;">
+    <img src="result/high_tax.png" alt="Image 3" style="width: 25%; margin: 0 10px;">
+    <img src="result/combined.png" alt="Image 4" style="width: 25%; margin: 0 10px;">
 </div>
 
 These pictures provide a more intuitive understanding of the changes in various metrics over different scenarios, such as the evolution of viewer distribution, revenue trends, and quality changes.
