@@ -5,3 +5,14 @@ base_revenue_share: 0.2
 network_effect_beta: 0.15
 quality_decay_rate: 0.01
 random_effect_scale: 0.2
+# 新增实验参数
+initial_audience_distribution:  # 初始观众分布设置
+  high: 0.1
+  medium: 0.3
+  low: 0.6
+viewer_interaction_groups:  # 观众互动组设置
+  high: 0.3
+  low: 0.7
+tax_rates: [0, 0.2, 0.4]  # 抽成率设置
+exposure_betas: [1.0, 1.5, 2.0]  # 流量倾斜策略设置
+reward_thresholds: [10, 20, 30]  # 打赏门槛设置
